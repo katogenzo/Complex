@@ -1,0 +1,353 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<circuits>
+<!-- 	<circuit site="http://www.drugoogle.com/"> -->
+<!-- 		<rootUrl url="http://www.drugoogle.com/member/index.jspx" /> -->
+<!-- 		<loginUrl url="http://www.drugoogle.com/index/registerloginjson.jspx?"> -->
+<!-- 			<params> -->
+<!-- 				<param type="text" name="username">5444</param> -->
+<!-- 				<param type="text" name="password">18605888311</param> -->
+<!-- 				<param type="captcha" name="verifyCode" -->
+<!-- 					sourceUrl="http://www.drugoogle.com/verifyCode/verifyCode.jsp"></param> -->
+<!-- 			</params> -->
+<!-- 		</loginUrl> -->
+<!-- 		<redirects> -->
+<!-- 			<redirect callback="true" -->
+<!-- 				url="http://www.drugoogle.com/index/index.htm" /> -->
+<!-- 			<redirect callback="true" -->
+<!-- 				url="http://www.drugoogle.com/index/sms.jsp?randCode=000000000&amp;url=http://www.drugoogle.com/index/index.htm&amp;sUrl=http://www.drugoogle.com/index/index.htm" /> -->
+<!-- 		</redirects> -->
+<!-- 		<datasources> -->
+<!-- 			<datasource name="goto"> -->
+<!-- 				<urltempalte method="GET" -->
+<!-- 					url="http://www.drugoogle.com/member/suppliers/medicineGoto/medicinegototab1.jspx?entryId=3&amp;medicineId=0&amp;storegeType=1&amp;updateTime=20130603053820&amp;month=&amp;year=" /> -->
+<!-- 				<params> -->
+<!-- 					<param type="text" name="[1]"></param> -->
+<!-- 					<param type="text" name="[2]"></param> -->
+<!-- 					<param type="text" name="[3]" source="{yyyymmdd}"></param> -->
+<!-- 				</params> -->
+<!-- 			</datasource> -->
+<!-- 		</datasources> -->
+<!-- 	</circuit> -->
+<!-- 	<circuit site="国药控股安康有限公司"> -->
+<!-- 		<rootUrl url="" /> -->
+<!-- 		<loginUrl url="http://210.87.160.82/webordersystem/userlogin.aspx"> -->
+<!-- 			<params> -->
+<!-- 				<param type="text" name="__VIEWSTATE">/wEPDwUKMTkzNzE5ODUzMw9kFgICAw9kFgICAQ8QDxYCHgtfIURhdGFCb3VuZGdkEBUBHuWbveiNr+aOp+iCoemZleilv+aciemZkOWFrOWPuBUBATEUKwMBZ2RkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBQVidG5PawUIYnRuUmVzZXTorZuOV1SXIcLd5diTBSugF8Jw0g==</param> -->
+<!-- 				<param type="text" name="drpCompany">1</param> -->
+<!-- 				<param type="text" name="txtUser">1771</param> -->
+<!-- 				<param type="text" name="txtPass">yangli559</param> -->
+<!-- 				<param type="text" name="btnOk.y">0</param> -->
+<!-- 				<param type="text" name="btnOk.x">0</param> -->
+<!-- 				<param type="captcha" name="txtVerify" -->
+<!-- 					sourceUrl="http://210.87.160.82/webordersystem/ValiateNum.ashx"></param> -->
+<!-- 			</params> -->
+<!-- 		</loginUrl> -->
+<!-- 		<redirects> -->
+<!-- 			<redirect callback="true" -->
+<!-- 				url="http://www.drugoogle.com/index/index.htm" /> -->
+<!-- 			<redirect callback="true" -->
+<!-- 				url="http://www.drugoogle.com/index/sms.jsp?randCode=000000000&amp;url=http://www.drugoogle.com/index/index.htm&amp;sUrl=http://www.drugoogle.com/index/index.htm" /> -->
+<!-- 		</redirects> -->
+<!-- 		<datasources> -->
+<!-- 			<datasource name="goto"> -->
+<!-- 				<urltempalte method="GET" -->
+<!-- 					url="http://www.drugoogle.com/member/suppliers/medicineGoto/medicinegototab1.jspx?entryId=3&amp;medicineId=0&amp;storegeType=1&amp;updateTime=20130603053820&amp;month=&amp;year=" /> -->
+<!-- 				<params> -->
+<!-- 					<param type="text" name="[1]"></param> -->
+<!-- 					<param type="text" name="[2]"></param> -->
+<!-- 					<param type="text" name="[3]" source="{yyyymmdd}"></param> -->
+<!-- 				</params> -->
+<!-- 			</datasource> -->
+<!-- 		</datasources> -->
+<!-- 	</circuit> -->
+	<circuit site="福建同春药业股份有限公司" code="3405">
+		<rootUrl url="http://tc.tcyy.com.cn:8888/tcyy/chose.jsp" />
+		<loginUrl url="http://tc.tcyy.com.cn:8888/tcyy/login.jsp?action=true">
+			<params>
+				<param type="text" name="txt_UserName">1001701</param>
+				<param type="text" name="txtPassWord">87872211</param>
+				<param type="text" name="imgLogin.x">32</param>
+				<param type="text" name="imgLogin.y">10</param>
+				<param type="captcha" name="txtVerifyCode"
+					sourceUrl="http://tc.tcyy.com.cn:8888/tcyy/code.jsp"></param>
+			</params>
+		</loginUrl>
+		<redirects>
+			<redirect callback="true"
+				url="http://tc.tcyy.com.cn:8888/tcyy/goodsflowlist.jsp" />
+		</redirects>
+		<datasources>
+			<datasource name="商品流向列表">
+				<urltempalte method="POST"
+					url="http://tc.tcyy.com.cn:8888/tcyy/goodsflowlist1.jsp" />
+				<params>
+					<param type="text" name="time1">2013-05-26</param>
+					<param type="text" name="time2">2013-06-25</param>
+					<param type="text" name="btnSearch"></param>
+				</params>
+			</datasource>
+			<datasource name="库存明细">
+				<urltempalte method="GET"
+					url="http://tc.tcyy.com.cn:8888/tcyy/looklot.jsp" />
+			</datasource>
+		</datasources>
+	</circuit>
+<!-- 	目前不抓取 -->
+	<circuit site="浙江省上虞市医药有限责任公司" code="NT34-0029">
+		<rootUrl url="http://220.189.229.188/search" />
+		<loginUrl url="http://220.189.229.188/login">
+			<params>
+				<param type="text" name="model.userName">zmtjsk</param>
+				<param type="text" name="model.password">213401</param>
+				<param type="text" name="backUrl"></param>
+			</params>
+		</loginUrl>
+		<datasources>
+			<datasource name="导出">
+				<urltempalte method="POST" url="http://220.189.229.188/search" />
+				<params>
+					<param type="text" name="hidErrorMessages"></param>
+					<param type="text" name="model.updateDate">2013-06-19</param>
+					<param type="text" name="model.userId">中美史克</param>
+					<param type="text" name="model.yxq">2014-05-29</param>
+					<param type="text" name="model.startDate">2013-05-26</param>
+					<param type="text" name="model.endDate">2013-06-25</param>
+					<param type="text" name="model.spId">00</param>
+				</params>
+			</datasource>
+		</datasources>
+	</circuit>
+	<circuit site="新龙药业集团有限公司" code="9355">
+		<rootUrl url="http://liuxiang.mypharma.com/Wuhan/Default.aspx" />
+		<loginUrl url="http://liuxiang.mypharma.com/Wuhan/index.aspx">
+			<params>
+				<param type="inhtmlById" name="__EVENTTARGET"></param>
+				<param type="inhtmlById" name="__EVENTARGUMENT"></param>
+				<param type="text" name="__VIEWSTATE">/wEPDwUKMTMyNDg1NDE4MQ9kFgICAQ9kFgICCQ8WAh4EVGV4dAW/ATx1bD48bGk+PGEgaHJlZj0nTm90aWNlLmFzcHg/a2V5PTQnIHRhcmdldD0nX2JsYW5rJyB0aXRsZT0n5YWz5LqOMjAxM+W5tOWNjua2puaWsOm+mea1geWQkeezu+e7n+WIsOacn+eUqOaIt+ivt+eCueWHuyc+5YWz5LqOMjAxM+W5tOWNjua2puaWsOm+mea1geWQkeezu+e7n+WIsOacn+eUqOaIt+ivt+eCueWHuzwvYT48L2xpPjwvdWw+ZGTs4gKhhqu/fysVpxhbLj1Sv4gIUJvI3y+ykMCZ1RaNkw==
+				</param>
+				<param type="text" name="__EVENTVALIDATION">/wEWBAK66pyOAQLStq24BwLXv9mrCQLN5PGwBp08a2u4NjILtEQ0pJJ9y2iUfwChgs4dAFg0TYkO5zq/
+				</param>
+				<param type="text" name="tbUsername">FW00001SK</param>
+				<param type="text" name="tbpassword">8888</param>
+				<param type="text" name="btOk"></param>
+			</params>
+		</loginUrl>
+		<datasources>
+			<datasource name="仓库库存">
+				<urltempalte method="GET"
+					url="http://liuxiang.mypharma.com/Wuhan/InventoryQuery.aspx" />
+				<params>
+					<param type="text" name="[1]"></param>
+					<param type="text" name="[2]"></param>
+					<param type="text" name="[3]" source="{yyyymmdd}"></param>
+				</params>
+			</datasource>
+		</datasources>
+	</circuit>
+	<circuit site="宁波医药股份有限公司" code="3380">
+		<rootUrl url="" />
+		<loginUrl url="http://www.nbyyz.com/web/web/Login.aspx">
+			<params>
+				<param type="inhtmlById" name="__EVENTTARGET"></param>
+				<param type="inhtmlById" name="__EVENTARGUMENT"></param>
+				<param type="text" name="__VIEWSTATE">/wEPDwUKLTg1MTEzODg4NmQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgEFCWlidG5Mb2dpbj/lrF4/L6KG21a9LI5wQJBQu+cR
+				</param>
+				<param type="text" name="__EVENTVALIDATION">/wEWBAK2/Kj4CwKbkZKwDQLenKONDQKBo5SvBT7vg0pLwTC7QcZY+7sdgUzONBis
+				</param>
+				<param type="text" name="tboxAccount">zmtjsk</param>
+				<param type="text" name="tboxPassword">051680</param>
+				<param type="text" name="ibtnLogin.x">32</param>
+				<param type="text" name="ibtnLogin.y">8</param>
+			</params>
+		</loginUrl>
+		<datasources>
+			<datasource name="进货 ">
+				<urltempalte method="POST"
+					url="http://www.nbyyz.com/web/web/InfoQuery/StockDetailPrice.aspx" />
+				<params>
+					<param type="text" name="__EVENTTARGET"></param>
+					<param type="text" name="__EVENTARGUMENT"></param>
+					<param type="text" name="__VIEWSTATE">/wEPDwUJMTQ5OTY1MTgzD2QWAgIBD2QWBAIBDzwrAAsAZAINDxAPFgYeDURhdGFUZXh0RmllbGQFCWdvb2RzbmFtZR4ORGF0YVZhbHVlRmllbGQFB2dvb2RzaWQeC18hRGF0YUJvdW5kZ2QQFS4G5YWo6YOoPjIxNTEgIC0gIOilv+WSquabv+S4geazqOWwhOa2sijms7DkuLrnvo4pICAtICAybWzvvJowLjJnw5c25pSvOzIzNDYgIC0gIOWvueS5memFsOawqOWfuumFmueJh++8iOW/heeQhumAmu+8iSAgLSAgMC41Z3gxMCdzSDIzNDkgIC0gIOWkjeaWueebkOmFuOS8qum6u+m7hOeisee8k+mHiuiDtuWbiu+8iOaWsOW6t+azsOWFi++8iSAgLSAgMTAnczsyMzUxICAtICDpmL/oi6/ovr7llJHniYfvvIjlj7LlhYvogqDomavmuIXvvIkgIC0gIDAuMmfDlzEwczYyMzUzICAtICDopb/nsbPmm7/kuIHniYfvvIjms7Dog4Pnvo7vvIkgIC0gIDIwJ3NYNDAwbWc2MjM1NCAgLSAg6KW/57Gz5pu/5LiB77yI5rOw6IOD576O77yJ54mHICAtICAxMCdzWDQwMG1nNjIzNTUgIC0gIOilv+exs+abv+S4ge+8iOazsOiDg+e+ju+8ieeJhyAgLSAgMTAnc3g4MDBtZzIyMzU2ICAtICDluIPmtJvoiqznvJPph4rog7blm4ogIC0gIDAuM2fDlzEwc8OXMuadvzYyMzU5ICAtICDokJjkuIHnvo7pha7niYfvvIjnkZ7lipvoiqzvvIkgIC0gIDUwMG1neDEwJ3M5MjY4MiAgLSAg6I6r5Yy5572X5pif6L2v6IaP77yI55m+5aSa6YKm77yJICAtICA1Z++8iDIl77yJKDI2ODMgIC0gIOW4g+a0m+iKrOS5s+iGjyAgLSAgMjBn77yINSXvvIlEMjY4NCAgLSAg55uQ6YW454m55q+U6JCY6Iqs5Lmz6IaP77yI5YWw576O5oqS77yJICAtICA1Zzo1MG1n77yIMSXvvIkpMzA0OSAgLSAg576O5omR5Lyq6bq754mHICAtICDlpI3mlrnDlzEwJ3NIMTQxMjAgIC0gIOS4memFuOWAjeawr+exs+advum8u+awlOmbvuWJgu+8iOS8r+WFi+e6s++8iSAgLSAgNTB1ZyAgMjAw5qyhPTIzMDMzICAtICDluIPmtJvoiqznvJPph4rog7blm4rvvIjoiqzlv4XlvpfvvIkgIC0gIDMwMG1neDEwJ3NHMjQ1MzIgIC0gIOS4memFuOawn+abv+WNoeadvum8u+WWt+mbvuWJgu+8iOi+heiIkuiJr++8iSAgLSAgNTB1Z3gxMjDmj785MjUwODUgIC0gIOW4g+a0m+S8qum6u+e8k+mHiuiDtuWbiijlurfms7DlhYvmuIUpICAtICAxMCdzQDI4NTUyICAtICDluIPmtJvoiqznvJPph4rog7blm4rvvIjoiqzlv4XlvpfvvIkgIC0gIDAuNMOXOHPDlzPmnb9HMjk2MDQgIC0gIOS4memFuOWAjeawr+exs+advum8u+awlOmbvuWJgu+8iOS8r+WFi+e6s++8iSAgLSAgNTB1ZyAyMDDmjoBLNDY1NTQgIC0gIOmFmuWSlueJhyAgLSAgMTDigJhz77yI5a+55LmZ6YWw5rCo5Z+66YWaNTAwbWfjgIHlkpbllaHlm6A2NW1n77yJTzQ5MDI2ICAtICDphZrlkpbniYcgIC0gIDEwJ3PDlzLmnb/vvIjlr7nkuZnphbDmsKjln7rphZo1MDBtZ+OAgeWSluWVoeWboDY1bWfvvIkuNDkwMjcgIC0gIOe+juaJkeS8qum6u+eJhyAgLSAg5aSN5pa5w5cxMHMqMuadvy41MTgwNyAgLSAg6IiS6YCC6L6+5riF5paw6JaE6I2354mZ6IaPICAtICAxMjBnLjUxODA4ICAtICDoiJLpgILovr7lhajpnaLmiqTnkIbniZnoho8gIC0gIDEyMGckNTIxODYgIC0gIOWBh+eJmea4hea0geeJhyAgLSAgMjTigJlTLjU0NTgwICAtICDoiJLpgILovr7pgJ/mlYjmipfmlY/niZnoho8gIC0gIDEyMGc3NTYzMzkgIC0gIOmAmuawlOm8u+i0tCAgLSAgMTDniYfDl+iCpOiJsuWei++8iOagh+WHhu+8iTs1NzM3NyAgLSAg6I6r5Yy5572X5pif6L2v6IaP77yI55m+5aSa6YKm77yJICAtICAxMGfvvIgyJe+8iTs1ODY1OSAgLSAg5YGH54mZ5riF5rSB54mH77yI5bGA6YOo5YGH54mZ5LiT55So77yJICAtICAyNOeJhzI1ODc5OSAgLSAg5YGH54mZ5riF5rSB54mH77yI5Yqg6YeP6KOF77yJICAtICA2MOeJhy81OTE3OSAgLSAg6YCa5rCU6by76LS077yI6YCP5piO5Z6L77yJICAtICAxMOeJh0g2MDY3OSAgLSAg6IiS6YCC6L6+5LiT5Lia5L+u5aSN54mZ6IaPMTAwZ++8iOiIkumAgui+vu+8iSAgLSAgNzVtbO+8mjEwMGdMNjI0NzkgIC0gIOiNieacrOa2puWWiei9r+ezlijmlrDlurfms7DlhYspICAtICA0MGfvvIgyMOeykuijhe+8ieiWhOiNt+WPo+WRsy42MzE2NSAgLSAg6YCa5rCU6by76LS0ICAtICA454mH77yI5YS/56ul5Z6L77yJNzY0MDI2ICAtICDoiJLpgILovr7niZnpvojmiqTnkIbmipfmlY/mhJ/niZnoho8gIC0gIDEyMGdGNjYyNDAgIC0gIOiNieacrOa2puWWiei9r+ezlijoloTojbflj6PlkbMpKOaWsOW6t+azsOWFi+WWieeIvSkgIC0gIDQwZ0Y2NjI0MSAgLSAg6I2J5pys5ram5ZaJ6L2v57OWKOafoOaqrOWPo+WRsyko5paw5bq35rOw5YWL5ZaJ54i9KSAgLSAgNDBnRjY2MjQyICAtICDojYnmnKzmtqbllonova/ns5Yo6JaE6I235Y+j5ZGzKSjmlrDlurfms7DlhYvllonniL0pICAtICAyMGdGNjYyNDMgIC0gIOiNieacrOa2puWWiei9r+ezlijmn6Dmqqzlj6PlkbMpKOaWsOW6t+azsOWFi+WWieeIvSkgIC0gIDIwZzM2NjY2MiAgLSAg5Yib6Z2i5raI5q+S5Za36Zu+5YmCKOeZvuWkmumCpikgIC0gIDcwbWxHNzAxMzYgIC0gIOS/neS4veWHgOWxgOmDqOWBh+eJmeS4k+eUqOWKoOmAgTbniYfkv4PplIDoo4UgIC0gIDI054mHKzbniYc1NzAxNDMgIC0gIOS4gemFuOawr+WAjeS7luadvuS5s+iGjyAgLSAgMTVn77yIMC4wNSXvvIlONzAxNDQgIC0gIOS/neS4veWHgOWBh+eJmea4hea0geeJh+WxgOmDqOWBh+eJmeS4k+eUqCAgLSAgMzBz77yI6I2v5bqX5LiT55So77yJSzcwMTQ1ICAtICDkv53kuL3lh4DlgYfniZnmuIXmtIHniYflhajljYrlj6PkuJPnlKggIC0gIDMwc++8iOiNr+W6l+S4k+S+m++8iU03MDM3MCAgLSAg6IiS6YCC6L6+5LiT5Lia5L+u5aSNMTAw5YWLK+mAn+aViOaKlzI15YWL5pWP5L+D6ZSA6KOFICAtICAxMDBnKzI1ZxUuA0FsbAQyMTUxBDIzNDYEMjM0OQQyMzUxBDIzNTMEMjM1NAQyMzU1BDIzNTYEMjM1OQQyNjgyBDI2ODMEMjY4NAQzMDQ5BTE0MTIwBTIzMDMzBTI0NTMyBTI1MDg1BTI4NTUyBTI5NjA0BTQ2NTU0BTQ5MDI2BTQ5MDI3BTUxODA3BTUxODA4BTUyMTg2BTU0NTgwBTU2MzM5BTU3Mzc3BTU4NjU5BTU4Nzk5BTU5MTc5BTYwNjc5BTYyNDc5BTYzMTY1BTY0MDI2BTY2MjQwBTY2MjQxBTY2MjQyBTY2MjQzBTY2NjYyBTcwMTM2BTcwMTQzBTcwMTQ0BTcwMTQ1BTcwMzcwFCsDLmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZBgBBR5fX0NvbnRyb2xzUmVxdWlyZVBvc3RCYWNrS2V5X18WAgUMSW1hZ2VidXR0b24xBQxJbWFnZUJ1dHRvbjKLt0qghTZndqQUErCmOg05YFGvfQ==
+					</param>
+					<param type="text" name="__EVENTVALIDATION">/wEWOgL0u6BoAtLCmbQIAqro2YEJAs2mo9sMAprUo+4EAovSrU4CjbbH/g4CyNzA8wUCsPaUigkC0tiR7g0CgKuVkw0Cu8SfvAMCu8Sb3wICgKudkw0CgKvF5Q8CgKvZgAcCgKutLAKAq4HLCQKAq73qCAL/88GiCgL/89XJAwL/86n1DAK8xI/fAgKF6tL/BAKEhL+PBgKctq72BAKehOv2BwKctqbMBQL7naigDwLYt56+BQLdhcP1DgLehcP1DgKV3urxDgKE3urxDgKD64KODAK9tpLbBAL62fLCCALM2YbcCwKJncjaCwLu5Pu/CAKw64q4DwL8npClDAKyoNTxAQLv7J6LBgKLha/hDgLP86TTCwLw86TTCwLx86TTCwLy86TTCwLlnpTwBALx7NamDALM7KrCBQLP7KrCBQLO7KrCBQK12arlCwKR6sXJCwKRsqqdCgLSwtXkAsWe4yH7HW1KevuxM1Ttd/bWiJgG
+					</param>
+					<param type="text" name="Imagebutton1.y">13</param>
+					<param type="text" name="Imagebutton1.x">21</param>
+					<param type="text" name="ddlSellDept">All</param>
+					<param type="text" name="ddlGoods">All</param>
+					<param type="text" name="tboxstarttime">2013-5-26</param>
+					<param type="text" name="tboxendtime">2013-6-25</param>
+				</params>
+			</datasource>
+			<datasource name="销售">
+				<urltempalte method="POST"
+					url="http://www.nbyyz.com/web/web/InfoQuery/SellDetailPrice.aspx" />
+				<params>
+					<param type="text" name="__EVENTTARGET"></param>
+					<param type="text" name="__EVENTARGUMENT"></param>
+					<param type="text" name="__VIEWSTATE">/wEPDwUJOTcyNzM4OTg0D2QWAgIBD2QWBgIBDzwrAAsAZAIRDxAPFgYeDURhdGFUZXh0RmllbGQFCWdvb2RzbmFtZR4ORGF0YVZhbHVlRmllbGQFB2dvb2RzaWQeC18hRGF0YUJvdW5kZ2QQFS4G5YWo6YOoPjIxNTEgIC0gIOilv+WSquabv+S4geazqOWwhOa2sijms7DkuLrnvo4pICAtICAybWzvvJowLjJnw5c25pSvOzIzNDYgIC0gIOWvueS5memFsOawqOWfuumFmueJh++8iOW/heeQhumAmu+8iSAgLSAgMC41Z3gxMCdzSDIzNDkgIC0gIOWkjeaWueebkOmFuOS8qum6u+m7hOeisee8k+mHiuiDtuWbiu+8iOaWsOW6t+azsOWFi++8iSAgLSAgMTAnczsyMzUxICAtICDpmL/oi6/ovr7llJHniYfvvIjlj7LlhYvogqDomavmuIXvvIkgIC0gIDAuMmfDlzEwczYyMzUzICAtICDopb/nsbPmm7/kuIHniYfvvIjms7Dog4Pnvo7vvIkgIC0gIDIwJ3NYNDAwbWc2MjM1NCAgLSAg6KW/57Gz5pu/5LiB77yI5rOw6IOD576O77yJ54mHICAtICAxMCdzWDQwMG1nNjIzNTUgIC0gIOilv+exs+abv+S4ge+8iOazsOiDg+e+ju+8ieeJhyAgLSAgMTAnc3g4MDBtZzIyMzU2ICAtICDluIPmtJvoiqznvJPph4rog7blm4ogIC0gIDAuM2fDlzEwc8OXMuadvzYyMzU5ICAtICDokJjkuIHnvo7pha7niYfvvIjnkZ7lipvoiqzvvIkgIC0gIDUwMG1neDEwJ3M5MjY4MiAgLSAg6I6r5Yy5572X5pif6L2v6IaP77yI55m+5aSa6YKm77yJICAtICA1Z++8iDIl77yJKDI2ODMgIC0gIOW4g+a0m+iKrOS5s+iGjyAgLSAgMjBn77yINSXvvIlEMjY4NCAgLSAg55uQ6YW454m55q+U6JCY6Iqs5Lmz6IaP77yI5YWw576O5oqS77yJICAtICA1Zzo1MG1n77yIMSXvvIkpMzA0OSAgLSAg576O5omR5Lyq6bq754mHICAtICDlpI3mlrnDlzEwJ3NIMTQxMjAgIC0gIOS4memFuOWAjeawr+exs+advum8u+awlOmbvuWJgu+8iOS8r+WFi+e6s++8iSAgLSAgNTB1ZyAgMjAw5qyhPTIzMDMzICAtICDluIPmtJvoiqznvJPph4rog7blm4rvvIjoiqzlv4XlvpfvvIkgIC0gIDMwMG1neDEwJ3NHMjQ1MzIgIC0gIOS4memFuOawn+abv+WNoeadvum8u+WWt+mbvuWJgu+8iOi+heiIkuiJr++8iSAgLSAgNTB1Z3gxMjDmj785MjUwODUgIC0gIOW4g+a0m+S8qum6u+e8k+mHiuiDtuWbiijlurfms7DlhYvmuIUpICAtICAxMCdzQDI4NTUyICAtICDluIPmtJvoiqznvJPph4rog7blm4rvvIjoiqzlv4XlvpfvvIkgIC0gIDAuNMOXOHPDlzPmnb9HMjk2MDQgIC0gIOS4memFuOWAjeawr+exs+advum8u+awlOmbvuWJgu+8iOS8r+WFi+e6s++8iSAgLSAgNTB1ZyAyMDDmjoBLNDY1NTQgIC0gIOmFmuWSlueJhyAgLSAgMTDigJhz77yI5a+55LmZ6YWw5rCo5Z+66YWaNTAwbWfjgIHlkpbllaHlm6A2NW1n77yJTzQ5MDI2ICAtICDphZrlkpbniYcgIC0gIDEwJ3PDlzLmnb/vvIjlr7nkuZnphbDmsKjln7rphZo1MDBtZ+OAgeWSluWVoeWboDY1bWfvvIkuNDkwMjcgIC0gIOe+juaJkeS8qum6u+eJhyAgLSAg5aSN5pa5w5cxMHMqMuadvy41MTgwNyAgLSAg6IiS6YCC6L6+5riF5paw6JaE6I2354mZ6IaPICAtICAxMjBnLjUxODA4ICAtICDoiJLpgILovr7lhajpnaLmiqTnkIbniZnoho8gIC0gIDEyMGckNTIxODYgIC0gIOWBh+eJmea4hea0geeJhyAgLSAgMjTigJlTLjU0NTgwICAtICDoiJLpgILovr7pgJ/mlYjmipfmlY/niZnoho8gIC0gIDEyMGc3NTYzMzkgIC0gIOmAmuawlOm8u+i0tCAgLSAgMTDniYfDl+iCpOiJsuWei++8iOagh+WHhu+8iTs1NzM3NyAgLSAg6I6r5Yy5572X5pif6L2v6IaP77yI55m+5aSa6YKm77yJICAtICAxMGfvvIgyJe+8iTs1ODY1OSAgLSAg5YGH54mZ5riF5rSB54mH77yI5bGA6YOo5YGH54mZ5LiT55So77yJICAtICAyNOeJhzI1ODc5OSAgLSAg5YGH54mZ5riF5rSB54mH77yI5Yqg6YeP6KOF77yJICAtICA2MOeJhy81OTE3OSAgLSAg6YCa5rCU6by76LS077yI6YCP5piO5Z6L77yJICAtICAxMOeJh0g2MDY3OSAgLSAg6IiS6YCC6L6+5LiT5Lia5L+u5aSN54mZ6IaPMTAwZ++8iOiIkumAgui+vu+8iSAgLSAgNzVtbO+8mjEwMGdMNjI0NzkgIC0gIOiNieacrOa2puWWiei9r+ezlijmlrDlurfms7DlhYspICAtICA0MGfvvIgyMOeykuijhe+8ieiWhOiNt+WPo+WRsy42MzE2NSAgLSAg6YCa5rCU6by76LS0ICAtICA454mH77yI5YS/56ul5Z6L77yJNzY0MDI2ICAtICDoiJLpgILovr7niZnpvojmiqTnkIbmipfmlY/mhJ/niZnoho8gIC0gIDEyMGdGNjYyNDAgIC0gIOiNieacrOa2puWWiei9r+ezlijoloTojbflj6PlkbMpKOaWsOW6t+azsOWFi+WWieeIvSkgIC0gIDQwZ0Y2NjI0MSAgLSAg6I2J5pys5ram5ZaJ6L2v57OWKOafoOaqrOWPo+WRsyko5paw5bq35rOw5YWL5ZaJ54i9KSAgLSAgNDBnRjY2MjQyICAtICDojYnmnKzmtqbllonova/ns5Yo6JaE6I235Y+j5ZGzKSjmlrDlurfms7DlhYvllonniL0pICAtICAyMGdGNjYyNDMgIC0gIOiNieacrOa2puWWiei9r+ezlijmn6Dmqqzlj6PlkbMpKOaWsOW6t+azsOWFi+WWieeIvSkgIC0gIDIwZzM2NjY2MiAgLSAg5Yib6Z2i5raI5q+S5Za36Zu+5YmCKOeZvuWkmumCpikgIC0gIDcwbWxHNzAxMzYgIC0gIOS/neS4veWHgOWxgOmDqOWBh+eJmeS4k+eUqOWKoOmAgTbniYfkv4PplIDoo4UgIC0gIDI054mHKzbniYc1NzAxNDMgIC0gIOS4gemFuOawr+WAjeS7luadvuS5s+iGjyAgLSAgMTVn77yIMC4wNSXvvIlONzAxNDQgIC0gIOS/neS4veWHgOWBh+eJmea4hea0geeJh+WxgOmDqOWBh+eJmeS4k+eUqCAgLSAgMzBz77yI6I2v5bqX5LiT55So77yJSzcwMTQ1ICAtICDkv53kuL3lh4DlgYfniZnmuIXmtIHniYflhajljYrlj6PkuJPnlKggIC0gIDMwc++8iOiNr+W6l+S4k+S+m++8iU03MDM3MCAgLSAg6IiS6YCC6L6+5LiT5Lia5L+u5aSNMTAw5YWLK+mAn+aViOaKlzI15YWL5pWP5L+D6ZSA6KOFICAtICAxMDBnKzI1ZxUuA0FsbAQyMTUxBDIzNDYEMjM0OQQyMzUxBDIzNTMEMjM1NAQyMzU1BDIzNTYEMjM1OQQyNjgyBDI2ODMEMjY4NAQzMDQ5BTE0MTIwBTIzMDMzBTI0NTMyBTI1MDg1BTI4NTUyBTI5NjA0BTQ2NTU0BTQ5MDI2BTQ5MDI3BTUxODA3BTUxODA4BTUyMTg2BTU0NTgwBTU2MzM5BTU3Mzc3BTU4NjU5BTU4Nzk5BTU5MTc5BTYwNjc5BTYyNDc5BTYzMTY1BTY0MDI2BTY2MjQwBTY2MjQxBTY2MjQyBTY2MjQzBTY2NjYyBTcwMTM2BTcwMTQzBTcwMTQ0BTcwMTQ1BTcwMzcwFCsDLmdnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dkZAIZDw8WAh4EVGV4dAUJMjAxMy02LTE5ZGQYAQUeX19Db250cm9sc1JlcXVpcmVQb3N0QmFja0tleV9fFgIFDEltYWdlYnV0dG9uMQUMSW1hZ2VCdXR0b24y8jGd5JiEKLdN7fmoED/Mh2e3j6o=
+					</param>
+					<param type="text" name="__EVENTVALIDATION">/wEWOwKn56CGDALZn+a7CwLSwpm0CALKjoOvBgKgyP2aDwLi/erbBwKvyP2aDwKvyJGbDwLk/brYBwKhyI2aDwLS2JHuDQKAq5WTDQK7xJ+8AwK7xJvfAgKAq52TDQKAq8XlDwKAq9mABwKAq60sAoCrgcsJAoCrveoIAv/zwaIKAv/z1ckDAv/zqfUMArzEj98CAoXq0v8EAoSEv48GApy2rvYEAp6E6/YHApy2pswFAvudqKAPAti3nr4FAt2Fw/UOAt6Fw/UOApXe6vEOAoTe6vEOAoPrgo4MAr22ktsEAvrZ8sIIAszZhtwLAomdyNoLAu7k+78IArDrirgPAvyekKUMArKg1PEBAu/snosGAouFr+EOAs/zpNMLAvDzpNMLAvHzpNMLAvLzpNMLAuWelPAEAvHs1qYMAszsqsIFAs/sqsIFAs7sqsIFArXZquULApHqxckLApGyqp0KAtLC1eQCGNin62bxk7L44sV/Cox2/u+8Tik=
+					</param>
+					<param type="text" name="tboxcustomname"></param>
+					<param type="text" name="Imagebutton1.y">27</param>
+					<param type="text" name="Imagebutton1.x">12</param>
+					<param type="text" name="ddlSellDept">ALL</param>
+					<param type="text" name="ddlGoods">All</param>
+					<param type="text" name="tboxstarttime">2013-5-26</param>
+					<param type="text" name="tboxendtime">2013-6-25</param>
+				</params>
+			</datasource>
+			<datasource name="库存">
+				<urltempalte method="POST"
+					url="http://www.nbyyz.com/web/web/InfoQuery/Storage.aspx" />
+				<params>
+					<param type="text" name="__EVENTTARGET"></param>
+					<param type="text" name="__EVENTARGUMENT"></param>
+					<param type="text" name="__VIEWSTATE">/wEPDwULLTE5MTQxOTY2NjYPZBYCAgEPZBYEAgEPPCsACwBkAg0PEA8WBh4NRGF0YVRleHRGaWVsZAUJZ29vZHNuYW1lHg5EYXRhVmFsdWVGaWVsZAUHZ29vZHNpZB4LXyFEYXRhQm91bmRnZBAVLgblhajpg6g+MjE1MSAgLSAg6KW/5ZKq5pu/5LiB5rOo5bCE5rayKOazsOS4uue+jikgIC0gIDJtbO+8mjAuMmfDlzbmlK87MjM0NiAgLSAg5a+55LmZ6YWw5rCo5Z+66YWa54mH77yI5b+F55CG6YCa77yJICAtICAwLjVneDEwJ3NIMjM0OSAgLSAg5aSN5pa555uQ6YW45Lyq6bq76buE56Kx57yT6YeK6IO25ZuK77yI5paw5bq35rOw5YWL77yJICAtICAxMCdzOzIzNTEgIC0gIOmYv+iLr+i+vuWUkeeJh++8iOWPsuWFi+iCoOiZq+a4he+8iSAgLSAgMC4yZ8OXMTBzNjIzNTMgIC0gIOilv+exs+abv+S4geeJh++8iOazsOiDg+e+ju+8iSAgLSAgMjAnc1g0MDBtZzYyMzU0ICAtICDopb/nsbPmm7/kuIHvvIjms7Dog4Pnvo7vvInniYcgIC0gIDEwJ3NYNDAwbWc2MjM1NSAgLSAg6KW/57Gz5pu/5LiB77yI5rOw6IOD576O77yJ54mHICAtICAxMCdzeDgwMG1nMjIzNTYgIC0gIOW4g+a0m+iKrOe8k+mHiuiDtuWbiiAgLSAgMC4zZ8OXMTBzw5cy5p2/NjIzNTkgIC0gIOiQmOS4gee+jumFrueJh++8iOeRnuWKm+iKrO+8iSAgLSAgNTAwbWd4MTAnczkyNjgyICAtICDojqvljLnnvZfmmJ/ova/oho/vvIjnmb7lpJrpgqbvvIkgIC0gIDVn77yIMiXvvIkoMjY4MyAgLSAg5biD5rSb6Iqs5Lmz6IaPICAtICAyMGfvvIg1Je+8iUQyNjg0ICAtICDnm5Dphbjnibnmr5TokJjoiqzkubPoho/vvIjlhbDnvo7mipLvvIkgIC0gIDVnOjUwbWfvvIgxJe+8iSkzMDQ5ICAtICDnvo7miZHkvKrpurvniYcgIC0gIOWkjeaWucOXMTAnc0gxNDEyMCAgLSAg5LiZ6YW45YCN5rCv57Gz5p2+6by75rCU6Zu+5YmC77yI5Lyv5YWL57qz77yJICAtICA1MHVnICAyMDDmrKE9MjMwMzMgIC0gIOW4g+a0m+iKrOe8k+mHiuiDtuWbiu+8iOiKrOW/heW+l++8iSAgLSAgMzAwbWd4MTAnc0cyNDUzMiAgLSAg5LiZ6YW45rCf5pu/5Y2h5p2+6by75Za36Zu+5YmC77yI6L6F6IiS6Imv77yJICAtICA1MHVneDEyMOaPvzkyNTA4NSAgLSAg5biD5rSb5Lyq6bq757yT6YeK6IO25ZuKKOW6t+azsOWFi+a4hSkgIC0gIDEwJ3NAMjg1NTIgIC0gIOW4g+a0m+iKrOe8k+mHiuiDtuWbiu+8iOiKrOW/heW+l++8iSAgLSAgMC40w5c4c8OXM+adv0cyOTYwNCAgLSAg5LiZ6YW45YCN5rCv57Gz5p2+6by75rCU6Zu+5YmC77yI5Lyv5YWL57qz77yJICAtICA1MHVnIDIwMOaOgEs0NjU1NCAgLSAg6YWa5ZKW54mHICAtICAxMOKAmHPvvIjlr7nkuZnphbDmsKjln7rphZo1MDBtZ+OAgeWSluWVoeWboDY1bWfvvIlPNDkwMjYgIC0gIOmFmuWSlueJhyAgLSAgMTAnc8OXMuadv++8iOWvueS5memFsOawqOWfuumFmjUwMG1n44CB5ZKW5ZWh5ZugNjVtZ++8iS40OTAyNyAgLSAg576O5omR5Lyq6bq754mHICAtICDlpI3mlrnDlzEwcyoy5p2/LjUxODA3ICAtICDoiJLpgILovr7muIXmlrDoloTojbfniZnoho8gIC0gIDEyMGcuNTE4MDggIC0gIOiIkumAgui+vuWFqOmdouaKpOeQhueJmeiGjyAgLSAgMTIwZyQ1MjE4NiAgLSAg5YGH54mZ5riF5rSB54mHICAtICAyNOKAmVMuNTQ1ODAgIC0gIOiIkumAgui+vumAn+aViOaKl+aVj+eJmeiGjyAgLSAgMTIwZzc1NjMzOSAgLSAg6YCa5rCU6by76LS0ICAtICAxMOeJh8OX6IKk6Imy5Z6L77yI5qCH5YeG77yJOzU3Mzc3ICAtICDojqvljLnnvZfmmJ/ova/oho/vvIjnmb7lpJrpgqbvvIkgIC0gIDEwZ++8iDIl77yJOzU4NjU5ICAtICDlgYfniZnmuIXmtIHniYfvvIjlsYDpg6jlgYfniZnkuJPnlKjvvIkgIC0gIDI054mHMjU4Nzk5ICAtICDlgYfniZnmuIXmtIHniYfvvIjliqDph4/oo4XvvIkgIC0gIDYw54mHLzU5MTc5ICAtICDpgJrmsJTpvLvotLTvvIjpgI/mmI7lnovvvIkgIC0gIDEw54mHSDYwNjc5ICAtICDoiJLpgILovr7kuJPkuJrkv67lpI3niZnoho8xMDBn77yI6IiS6YCC6L6+77yJICAtICA3NW1s77yaMTAwZ0w2MjQ3OSAgLSAg6I2J5pys5ram5ZaJ6L2v57OWKOaWsOW6t+azsOWFiykgIC0gIDQwZ++8iDIw57KS6KOF77yJ6JaE6I235Y+j5ZGzLjYzMTY1ICAtICDpgJrmsJTpvLvotLQgIC0gIDjniYfvvIjlhL/nq6XlnovvvIk3NjQwMjYgIC0gIOiIkumAgui+vueJmem+iOaKpOeQhuaKl+aVj+aEn+eJmeiGjyAgLSAgMTIwZ0Y2NjI0MCAgLSAg6I2J5pys5ram5ZaJ6L2v57OWKOiWhOiNt+WPo+WRsyko5paw5bq35rOw5YWL5ZaJ54i9KSAgLSAgNDBnRjY2MjQxICAtICDojYnmnKzmtqbllonova/ns5Yo5p+g5qqs5Y+j5ZGzKSjmlrDlurfms7DlhYvllonniL0pICAtICA0MGdGNjYyNDIgIC0gIOiNieacrOa2puWWiei9r+ezlijoloTojbflj6PlkbMpKOaWsOW6t+azsOWFi+WWieeIvSkgIC0gIDIwZ0Y2NjI0MyAgLSAg6I2J5pys5ram5ZaJ6L2v57OWKOafoOaqrOWPo+WRsyko5paw5bq35rOw5YWL5ZaJ54i9KSAgLSAgMjBnMzY2NjYyICAtICDliJvpnaLmtojmr5Lllrfpm77liYIo55m+5aSa6YKmKSAgLSAgNzBtbEc3MDEzNiAgLSAg5L+d5Li95YeA5bGA6YOo5YGH54mZ5LiT55So5Yqg6YCBNueJh+S/g+mUgOijhSAgLSAgMjTniYcrNueJhzU3MDE0MyAgLSAg5LiB6YW45rCv5YCN5LuW5p2+5Lmz6IaPICAtICAxNWfvvIgwLjA1Je+8iU43MDE0NCAgLSAg5L+d5Li95YeA5YGH54mZ5riF5rSB54mH5bGA6YOo5YGH54mZ5LiT55SoICAtICAzMHPvvIjoja/lupfkuJPnlKjvvIlLNzAxNDUgIC0gIOS/neS4veWHgOWBh+eJmea4hea0geeJh+WFqOWNiuWPo+S4k+eUqCAgLSAgMzBz77yI6I2v5bqX5LiT5L6b77yJTTcwMzcwICAtICDoiJLpgILovr7kuJPkuJrkv67lpI0xMDDlhYsr6YCf5pWI5oqXMjXlhYvmlY/kv4PplIDoo4UgIC0gIDEwMGcrMjVnFS4DQWxsBDIxNTEEMjM0NgQyMzQ5BDIzNTEEMjM1MwQyMzU0BDIzNTUEMjM1NgQyMzU5BDI2ODIEMjY4MwQyNjg0BDMwNDkFMTQxMjAFMjMwMzMFMjQ1MzIFMjUwODUFMjg1NTIFMjk2MDQFNDY1NTQFNDkwMjYFNDkwMjcFNTE4MDcFNTE4MDgFNTIxODYFNTQ1ODAFNTYzMzkFNTczNzcFNTg2NTkFNTg3OTkFNTkxNzkFNjA2NzkFNjI0NzkFNjMxNjUFNjQwMjYFNjYyNDAFNjYyNDEFNjYyNDIFNjYyNDMFNjY2NjIFNzAxMzYFNzAxNDMFNzAxNDQFNzAxNDUFNzAzNzAUKwMuZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2dnZ2RkGAEFHl9fQ29udHJvbHNSZXF1aXJlUG9zdEJhY2tLZXlfXxYCBQxJbWFnZWJ1dHRvbjEFDEltYWdlQnV0dG9uMuamiV7JJQR4GEbvClClwztq/Das
+					</param>
+					<param type="text" name="__EVENTVALIDATION">/wEWMgKUkM6nBwLSwpm0CALKjoOvBgLS2JHuDQKAq5WTDQK7xJ+8AwK7xJvfAgKAq52TDQKAq8XlDwKAq9mABwKAq60sAoCrgcsJAoCrveoIAv/zwaIKAv/z1ckDAv/zqfUMArzEj98CAoXq0v8EAoSEv48GApy2rvYEAp6E6/YHApy2pswFAvudqKAPAti3nr4FAt2Fw/UOAt6Fw/UOApXe6vEOAoTe6vEOAoPrgo4MAr22ktsEAvrZ8sIIAszZhtwLAomdyNoLAu7k+78IArDrirgPAvyekKUMArKg1PEBAu/snosGAouFr+EOAs/zpNMLAvDzpNMLAvHzpNMLAvLzpNMLAuWelPAEAvHs1qYMAszsqsIFAs/sqsIFAs7sqsIFArXZquULAtLC1eQCPvWt59zEhf1KpI60PHfgce1cmsA=
+					</param>
+					<param type="text" name="Imagebutton1.y">27</param>
+					<param type="text" name="Imagebutton1.x">12</param>
+					<param type="text" name="ddlSellDept">ALL</param>
+					<param type="text" name="ddlGoods">All</param>
+				</params>
+			</datasource>
+		</datasources>
+	</circuit>
+	<circuit site="南京医药药事服务有限公司" code="9361">
+		<rootUrl url="http://222.190.117.5:8886/elink11/system/main.html" />
+		<loginUrl url="http://222.190.117.5:8886/elink11/initAction/login.do">
+			<params>
+				<param type="text" name="submit">登 陆</param>
+				<param type="text" name="user">1023196</param>
+				<param type="text" name="password">1023196</param>
+				<param type="text" name="password">1023196</param>
+				<param type="text" name="option">login</param>
+			</params>
+		</loginUrl>
+		<datasources>
+			<datasource name="进货">
+				<urltempalte method="POST"
+					url="http://222.190.117.5:8886/elink11/invoiceAction/query.do" />
+				<params>
+					<param type="text" name="dateFrom">2013-05-26</param>
+					<param type="text" name="dateTo">2013-06-25</param>
+					<param type="text" name="showPrice">true</param>
+					<param type="text" name="self">false</param>
+					<param type="text" name="start">0</param>
+					<param type="text" name="stock">A</param>
+					<param type="text" name="limit">1000</param>
+				</params>
+			</datasource>
+			<datasource name="销售">
+				<urltempalte method="POST"
+					url="http://222.190.117.5:8886/elink11/poinoutAction/query.do" />
+				<params>
+					<param type="text" name="dateFrom">2013-05-26</param>
+					<param type="text" name="dateTo">2013-06-25</param>
+					<param type="text" name="showPrice">true</param>
+					<param type="text" name="self">false</param>
+					<param type="text" name="start">0</param>
+					<param type="text" name="stock">A</param>
+					<param type="text" name="limit">1000</param>
+				</params>
+			</datasource>
+			<datasource name="库存">
+				<urltempalte method="POST"
+					url="http://222.190.117.5:8886/elink11/storageAction/query.do" />
+				<params>
+					<param type="text" name="dateFrom">2013-05-26</param>
+					<param type="text" name="dateTo">2013-06-25</param>
+					<param type="text" name="showPrice">true</param>
+					<param type="text" name="self">false</param>
+					<param type="text" name="start">0</param>
+					<param type="text" name="stock">A</param>
+					<param type="text" name="limit">1000</param>
+				</params>
+			</datasource>
+
+		</datasources>
+	</circuit>
+	<circuit site="江苏华晓医药物流有限公司" code="NT23-0043">
+		<rootUrl url="http://221.231.111.13:8686/default.aspx" />
+		<loginUrl url="http://221.231.111.13:8686/default.aspx">
+			<params>
+				<param type="text" name="__EVENTVALIDATION">/wEWBQLFi6T6DgLs0bLrBgLs0fbZDAKM54rGBgK7q7GGCMoApjzGPUOWGMuBr7OoASQ6mrZD</param>
+				<param type="text" name="__VIEWSTATE">/wEWBQLFi6T6DgLs0bLrBgLs0fbZDAKM54rGBgK7q7GGCMoApjzGPUOWGMuBr7OoASQ6mrZD</param>
+				<param type="text" name="TextBox1">10019</param>
+				<param type="text" name="TextBox2">10020</param>
+				<param type="text" name="Button1">确定</param>
+			</params>
+		</loginUrl>
+		<!-- <redirects> -->
+		<!-- <redirect callback="true" -->
+		<!-- url="http://218.5.65.213/flows/flowsearch/goodsearch.aspx"/> -->
+		<!-- </redirects> -->
+		<datasources>
+			<datasource name="网上流向查询">
+				<urltempalte method="POST"
+					url="http://221.231.111.13:8686/default2.aspx?kk=10019" />
+				<params>
+					<param type="text" name="__EVENTTARGET"></param>
+					<param type="text" name="__EVENTARGUMENT"></param>
+					<param type="text" name="__VIEWSTATE">/wEPDwULLTIwNzgyNjY3MDEPZBYCAgMPZBYGAgUPDxYCHgRUZXh0BQgyMDEzMDYwMWRkAgcPDxYCHwAFCDIwMTMwNjIwZGQCDw88KwALAGRkpayTlHyfGrRlEirN2cBPFNKEfQg=</param>
+					<param type="text" name="__EVENTVALIDATION">/wEWCAKW2OOlDQLM9PumDwKxi96RBQLs0bLrBgLs0fbZDAKM54rGBgK7q7GGCALWlM+bApKEGTTKlgZ0zZjuRZWDn6KmrM7t</param>
+					<param type="text" name="TextBox1">20130526</param>
+					<param type="text" name="TextBox2">20130625</param>
+					<param type="text" name="Button1">查询</param>
+				</params>
+			</datasource>
+			<datasource name="网上库存查询">
+				<urltempalte method="POST"
+					url="http://221.231.111.13:8686/default3.aspx?kk=10019" />
+				<params>
+					<param type="text" name="__EVENTTARGET"></param>
+					<param type="text" name="__EVENTARGUMENT"></param>
+					<param type="text" name="__VIEWSTATE">/wEPDwULLTEzOTQ2MTgzMDEPZBYCAgMPZBYCAgsPPCsACwBkZCVx40xmvkUK8xlYvF2YpFjO0TYg</param>
+					<param type="text" name="__EVENTVALIDATION">/wEWBgKtxKq+BALM9PumDwKxi96RBQKM54rGBgK7q7GGCALWlM+bAgFTt1bQTO8FBjIy7fYNiWOcd9Ug</param>
+					<param type="text" name="Button1">查询</param>
+				</params>
+			</datasource>
+		</datasources>
+	</circuit>
+		<circuit site="绍兴县华通医药有限公司" code="NT34-0030">
+		<rootUrl url="http://60.190.198.154:8080/" />
+		<loginUrl url="http://60.190.198.154:8080/index.jsp">
+			<params>
+				<param type="text" name="username">tjsk</param>
+				<param type="text" name="password">123456</param>
+				<param type="text" name="acctype">4</param>
+			</params>
+		</loginUrl>
+		<!-- <redirects> -->
+		<!-- <redirect callback="true" -->
+		<!-- url="http://218.5.65.213/flows/flowsearch/goodsearch.aspx"/> -->
+		<!-- </redirects> -->
+		<datasources>
+			<datasource name="ProductList">
+				<urltempalte method="GET"
+					url="http://60.190.198.154:8080/aweb/find_csdb.jsp?PNo=1" />
+				<params>
+				<param type="text" name="PlanSearch"></param>
+				<param type="text" name="PlanEnd">2013-05-26</param>
+				<param type="text" name="PlanEnd2">2013-06-25</param>
+				<param type="text" name="PatchCode"></param>
+				<param type="text" name="B1">查 找</param>
+				</params>
+			</datasource>
+			<datasource name="receiptList">
+				<urltempalte method="GET"
+					url="http://60.190.198.154:8080/aweb/find_cg.jsp" />
+				<params>
+				<param type="text" name="PlanSearch"></param>
+				<param type="text" name="PlanEnd">2013-05-26</param>
+				<param type="text" name="PlanEnd2">2013-06-25</param>
+				<param type="text" name="PatchCode"></param>
+				<param type="text" name="B1">查 找</param>
+				</params>
+			</datasource>
+		</datasources>
+	</circuit>
+</circuits>
